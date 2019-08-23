@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    height: 96px;
+}
+header .logo {
+    width: 70px;
+}
+header #navLinks {
+    flex-grow: 1;
+}
+header #navLinks nav {
+    margin: 0 auto;
+    text-align: center;
+}
+header nav a {
+    padding: 2px 18px;
+    text-decoration: none;
+    color: rgba(174, 174, 174, 1);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+header nav a:hover {
+    color: #000000;
+}
+header #socMedLinks a {
+    margin: 0 7px;
+}
+header #socMedLinks a i {
+    transition: all ease-in-out 0.3s;
+}
+header #socMedLinks a:nth-child(1) i {color: #3b5998;}
+header #socMedLinks a:nth-child(2) i {color: #e52d27;}
+header #socMedLinks a:nth-child(3) i {color: #55acee;}
+header #socMedLinks a:nth-child(4) i {color: #0077b5;}
+header #socMedLinks a i:hover {
+    color: rgba(174, 174, 174, 1);
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
