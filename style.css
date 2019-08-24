@@ -114,19 +114,19 @@ hr {
     font-weight: 600;
     border-radius: 5px;
 }
-#recentBlogs .recentBlogCard .post-categories .food {
+#recentBlogs .recentBlogCard .post-categories .food, #editorPicks .blogCard .imgWrapper .post-categories .food {
     background-color: #81d742;
 }
-#recentBlogs .recentBlogCard .post-categories .culture {
+#recentBlogs .recentBlogCard .post-categories .culture, #editorPicks .blogCard .imgWrapper .post-categories .culture {
     background-color: darkgoldenrod;
 }
-#recentBlogs .recentBlogCard .post-categories .tech {
+#recentBlogs .recentBlogCard .post-categories .tech, #editorPicks .blogCard .imgWrapper .post-categories .tech {
     background-color: darkorchid;
 }
-#recentBlogs .recentBlogCard .post-categories .skinHair {
+#recentBlogs .recentBlogCard .post-categories .skinHair, #editorPicks .blogCard .imgWrapper .post-categories .skinHair {
     background-color: deepskyblue
 }
-#recentBlogs .recentBlogCard .post-categories .inspiration {
+#recentBlogs .recentBlogCard .post-categories .inspiration, #editorPicks .blogCard .imgWrapper .post-categories .inspiration {
     background-color: crimson;
 }
 #recentBlogs .recentBlogCard .post-details {
@@ -169,9 +169,103 @@ hr {
     display: grid;
     grid-auto-rows: 120px;
     grid-auto-flow: dense;
-    grid-gap: 14px;
+    grid-gap: 28px;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
-#editorPicks .blogCard {
-    
+#editorPicksHeader {
+    padding: 0 7%;
 }
+#editorPicksHeader h2 {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+}
+#editorPicks .blogCard {
+    grid-row: span 5;
+    grid-column: span 2;
+}
+#editorPicks .blogCard .imgWrapper {
+    height: 45%;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1); 
+}
+#editorPicks .blogCard:nth-child(1) .imgWrapper {
+    background: url("img/prince-akachi-J1OScm_uHUQ-unsplash.jpg") center/cover no-repeat;
+}
+#editorPicks .blogCard:nth-child(2) .imgWrapper {
+    background: url("img/mike-dorner-sf_1ZDA1YFw-unsplash.jpg") center/cover no-repeat;
+}
+#editorPicks .blogCard:nth-child(3) .imgWrapper {
+    background: url("img/matthew-kerslake-BpH--upRlCs-unsplash.jpg") center/cover no-repeat;
+}
+#editorPicks .blogCard .post-title {
+    font-size: 24px;
+    display: block;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+#editorPicks .blogCard .post-author, #editorPicks .blogCard .post-date {
+    display: inline-block;
+    color: #666666;
+    font-size: 14px;
+}
+#editorPicks .blogCard .post-author .post-avatar {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#editorPicks .blogCard .post-author::after {
+    content: "-";
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#editorPicks .blogCard .post-excerpt {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    line-height: 1.75;
+}
+#editorPicks .blogCard .imgWrapper .post-categories {
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+#editorPicks .blogCard .imgWrapper .post-categories a{
+    padding: 3px 7px;
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#popularCategories {
+    padding: 0 7%;
+    display: grid;
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+#popularCategories .categoryCard {
+    grid-row: span 3;
+    grid-column: span 2;
+
+}
+#popularCategories .categoryCard {
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
+}
+#popularCategories .categoryCard:nth-child(1) {background: url("img/edgar-castrejon-1CsaVdwfIew-unsplash.jpg") center/cover no-repeat;}
+#popularCategories .categoryCard:nth-child(2) {background: url("img/eloise-ambursley-59Td06omPVc-unsplash.jpg") center/cover no-repeat;}
+#popularCategories .categoryCard:nth-child(3) {background: url("img/linkedin-sales-navigator-EI50ZDA-l8Y-unsplash.jpg") center/cover no-repeat;}
+#popularCategories .categoryCard:nth-child(4) {background: url("img/rory-carson-6RxDN3vM45g-unsplash.jpg") center/cover no-repeat;}
