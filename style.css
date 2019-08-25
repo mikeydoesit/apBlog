@@ -117,32 +117,32 @@ hr {
 }
 #recentBlogs .recentBlogCard .post-categories .food, 
 #editorPicks .blogCard .imgWrapper .post-categories .food,
-#popularCategories .categoryCard .post-categories .food {
+#popularCategories .categoryCard .post-categories.food {
     background-color: #81d742;
 }
 #recentBlogs .recentBlogCard .post-categories .culture, 
 #editorPicks .blogCard .imgWrapper .post-categories .culture,
-#popularCategories .categoryCard .post-categories .culture {
+#popularCategories .categoryCard .post-categories.culture {
     background-color: darkgoldenrod;
 }
 #recentBlogs .recentBlogCard .post-categories .tech, 
 #editorPicks .blogCard .imgWrapper .post-categories .tech,
-#popularCategories .categoryCard .post-categories .tech {
+#popularCategories .categoryCard .post-categories.tech {
     background-color: darkorchid;
 }
 #recentBlogs .recentBlogCard .post-categories .skinHair, 
 #editorPicks .blogCard .imgWrapper .post-categories .skinHair,
-#popularCategories .categoryCard .post-categories .skinHair {
+#popularCategories .categoryCard .post-categories.skinHair {
     background-color: deepskyblue
 }
 #recentBlogs .recentBlogCard .post-categories .inspiration, 
 #editorPicks .blogCard .imgWrapper .post-categories .inspiration,
-#popularCategories .categoryCard .post-categories .inspiration {
+#popularCategories .categoryCard .post-categories.inspiration {
     background-color: crimson;
 }
 #recentBlogs .recentBlogCard .post-categories .businessFinance, 
 #editorPicks .blogCard .imgWrapper .post-categories .businessFinance,
-#popularCategories .categoryCard .post-categories .businessFinance {
+#popularCategories .categoryCard .post-categories.businessFinance {
     background-color: orangered;
 }
 #recentBlogs .recentBlogCard .post-details {
@@ -290,18 +290,18 @@ hr {
 #popularCategories .categoryCard:nth-child(4) {background: url("img/rory-carson-6RxDN3vM45g-unsplash.jpg") center/cover no-repeat;}
 #popularCategories .categoryCard .post-categories {
     position: absolute;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 2px;
     bottom: 0;
-    transform: translateX(-50%);
-    left: 50%;
-    display: inline-table;
-    padding-bottom: 15px;
+    width: 100%;
+    display: block;
+    padding: 14px 14px;
+    border-radius: 0px 0px 7px 7px;
 }
 #popularCategories .categoryCard .post-categories a {
-    padding: 7px 14px;
     text-decoration: none;
     color: azure;
     font-weight: 600;
-    border-radius: 5px;
+    display: block;
+    text-align: center;
 }
