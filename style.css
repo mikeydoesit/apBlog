@@ -189,16 +189,17 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     margin-bottom: 3.5rem;
 }
-#editorPicksHeader {
+.sectionHeader {
     padding: 0 7%;
 }
-#editorPicksHeader h2 {
+.sectionHeader h2 {
     text-align: left;
     font-size: 35px;
     margin-bottom: 40px;
     font-weight: bold;
     line-height: 1.25;
     color: #000000;
+    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
 }
 #editorPicks .blogCard {
