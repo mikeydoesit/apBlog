@@ -63,7 +63,8 @@ hr {
     grid-auto-rows: 120px;
     grid-auto-flow: dense;
     grid-gap: 14px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin-bottom: 3.5rem;    
 }
 #recentBlogs .recentBlogCard:nth-child(1) {
     background: url("img/annie-spratt-PM4Vu1B0gxk-unsplash.jpg") center/cover no-repeat;
@@ -153,7 +154,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3.5rem 7%;
+    margin: 0 7% 3.5rem 7%;
     background-color: #000000;
     height: 14vh;
 }
@@ -171,6 +172,7 @@ hr {
     grid-auto-flow: dense;
     grid-gap: 28px;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin-bottom: 3.5rem;
 }
 #editorPicksHeader {
     padding: 0 7%;
@@ -255,6 +257,7 @@ hr {
     grid-auto-flow: dense;
     grid-gap: 28px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-bottom: 3.5rem;
 }
 #popularCategories .categoryCard {
     grid-row: span 3;
