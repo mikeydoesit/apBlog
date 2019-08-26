@@ -5,6 +5,31 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.loader  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img {
+    width: 300px;
+    display: inline-block;
+    transform: translate3d(0);
+    animation: bounce 0.7s infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+main {
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    display: 'none';
+}
+
 header {
     display: flex;
     align-items: center;
@@ -80,32 +105,32 @@ hr {
     margin-bottom: 3.5rem;    
 }
 #recentBlogs .recentBlogCard:nth-child(1) {
-    background: url("img/annie-spratt-PM4Vu1B0gxk-unsplash.jpg") center/cover no-repeat;
+    background: url("img/annie-spratt-PM4Vu1B0gxk-unsplash.png") center/cover no-repeat;
     grid-row: span 2;
     grid-column: span 4;
 }
 #recentBlogs .recentBlogCard:nth-child(2) {
-    background: url("img/oladimeji-odunsi-tUUmR82pq68-unsplash.jpg") center/cover no-repeat;
+    background: url("img/oladimeji-odunsi-tUUmR82pq68-unsplash.png") center/cover no-repeat;
     grid-row: span 3;
     grid-column: span 2;
 }
 #recentBlogs .recentBlogCard:nth-child(3) {
-    background: url("img/mike-dorner-sf_1ZDA1YFw-unsplash.jpg") center/cover no-repeat;
+    background: url("img/mike-dorner-sf_1ZDA1YFw-unsplash.png") center/cover no-repeat;
     grid-row: span 3;
     grid-column: span 2;
 }
 #recentBlogs .recentBlogCard:nth-child(4) {
-    background: url("img/sai-de-silva-httxBNGKapo-unsplash.jpg") center/cover no-repeat;
+    background: url("img/sai-de-silva-httxBNGKapo-unsplash.png") center/cover no-repeat;
     grid-row: span 3;
     grid-column: span 2;
 }
 #recentBlogs .recentBlogCard:nth-child(5) {
-    background: url("img/prince-akachi-J1OScm_uHUQ-unsplash.jpg") center/cover no-repeat;
+    background: url("img/prince-akachi-J1OScm_uHUQ-unsplash.png") center/cover no-repeat;
     grid-row: span 3;
     grid-column: span 2;
 }
 #recentBlogs .recentBlogCard:nth-child(6) {
-    background: url("img/matthew-kerslake-BpH--upRlCs-unsplash.jpg") center/cover no-repeat;
+    background: url("img/matthew-kerslake-BpH--upRlCs-unsplash.png") center/cover no-repeat;
     grid-row: span 2;
     grid-column: span 4;
 }
@@ -236,13 +261,13 @@ hr {
     box-shadow: 0px 0px 10px 0px rgba(227,220,227,1); 
 }
 #editorPicks .blogCard:nth-child(1) .imgWrapper {
-    background: url("img/prince-akachi-J1OScm_uHUQ-unsplash.jpg") center/cover no-repeat;
+    background: url("img/prince-akachi-J1OScm_uHUQ-unsplash.png") center/cover no-repeat;
 }
 #editorPicks .blogCard:nth-child(2) .imgWrapper {
-    background: url("img/mike-dorner-sf_1ZDA1YFw-unsplash.jpg") center/cover no-repeat;
+    background: url("img/mike-dorner-sf_1ZDA1YFw-unsplash.png") center/cover no-repeat;
 }
 #editorPicks .blogCard:nth-child(3) .imgWrapper {
-    background: url("img/matthew-kerslake-BpH--upRlCs-unsplash.jpg") center/cover no-repeat;
+    background: url("img/matthew-kerslake-BpH--upRlCs-unsplash.png") center/cover no-repeat;
 }
 #editorPicks .blogCard .post-title {
     font-size: 24px;
@@ -315,10 +340,10 @@ hr {
 #popularCategories .categoryCardWrapper:hover .categoryCard {
     transform: scale(1.1);
 }
-#popularCategories .categoryCardWrapper:nth-child(1) .categoryCard {background: url("img/edgar-castrejon-1CsaVdwfIew-unsplash.jpg") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper:nth-child(2) .categoryCard {background: url("img/eloise-ambursley-59Td06omPVc-unsplash.jpg") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper:nth-child(3) .categoryCard {background: url("img/linkedin-sales-navigator-EI50ZDA-l8Y-unsplash.jpg") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper:nth-child(4) .categoryCard {background: url("img/rory-carson-6RxDN3vM45g-unsplash.jpg") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper:nth-child(1) .categoryCard {background: url("img/edgar-castrejon-1CsaVdwfIew-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper:nth-child(2) .categoryCard {background: url("img/eloise-ambursley-59Td06omPVc-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper:nth-child(3) .categoryCard {background: url("img/linkedin-sales-navigator-EI50ZDA-l8Y-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper:nth-child(4) .categoryCard {background: url("img/rory-carson-6RxDN3vM45g-unsplash.png") center/cover no-repeat;}
 #popularCategories .categoryCardWrapper .post-categories {
     position: absolute;
     font-size: 12px;
