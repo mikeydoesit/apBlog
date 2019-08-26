@@ -31,7 +31,7 @@ header nav a {
     transition: all ease-in-out 0.3s;
 }
 header nav .home:hover {color: #000000;}
-header nav .fashion:hover {color: #000000;}
+header nav .fashion:hover {color: #FFFF00;}
 header nav .skinHair:hover {color: deepskyblue;}
 header nav .food:hover {color: #81d742;}
 header nav .tech:hover {color: darkorchid;}
@@ -39,17 +39,24 @@ header nav .inspiration:hover {color: crimson;}
 header nav .culture:hover {color: darkgoldenrod;}
 header nav .businessFinance:hover {color: orangered;}
 
-header #socMedLinks a {
+header .socMedLinks a,
+.footer .socMedLinks a {
     margin: 0 7px;
 }
-header #socMedLinks a i {
+header .socMedLinks a i,
+.footer .socMedLinks a i {
     transition: all ease-in-out 0.3s;
 }
-header #socMedLinks a:nth-child(1) i {color: #3b5998;}
-header #socMedLinks a:nth-child(2) i {color: #e52d27;}
-header #socMedLinks a:nth-child(3) i {color: #55acee;}
-header #socMedLinks a:nth-child(4) i {color: #0077b5;}
-header #socMedLinks a i:hover {
+header .socMedLinks a:nth-child(1) i,
+.footer .socMedLinks a:nth-child(1) i {color: #3b5998;}
+header .socMedLinks a:nth-child(2) i,
+.footer .socMedLinks a:nth-child(2) i {color: #e52d27;}
+header .socMedLinks a:nth-child(3) i,
+.footer .socMedLinks a:nth-child(3) i {color: #55acee;}
+header .socMedLinks a:nth-child(4) i,
+.footer .socMedLinks a:nth-child(4) i {color: #0077b5;}
+header .socMedLinks a i:hover,
+.footer .socMedLinks a i:hover {
     color: rgba(174, 174, 174, 1);
 }
 
@@ -328,4 +335,41 @@ hr {
     font-weight: 600;
     display: block;
     text-align: center;
+}
+hr:last-of-type {
+    margin-bottom: 2rem;
+}
+.footer {
+    padding: 0 7% 30px;
+}
+.footer .socMedLinks {
+    margin-bottom: 15px;
+}
+.footer .socMedLinks a {
+    line-height: 1.75;
+}
+.footer #footerMenu {
+    margin-bottom: 15px;
+}
+.footer #footerMenu a {
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer #footerMenu a:first-of-type,
+.footer .socMedLinks a:first-of-type {
+    margin-left: 0;
+}
+.footer #footerCopyright {
+    color: rgba(174, 174, 174, 1);
+}
+.footer #footerCopyright p {
+    font-weight: 600;
+    font-size: 15px;
+}
+.footer #footerCopyright p span{
+    color: #000000;
 }
