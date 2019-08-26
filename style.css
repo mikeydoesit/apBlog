@@ -30,9 +30,15 @@ header nav a {
     font-weight: 600;
     transition: all ease-in-out 0.3s;
 }
-header nav a:hover {
-    color: #000000;
-}
+header nav .home:hover {color: #000000;}
+header nav .fashion:hover {color: #000000;}
+header nav .skinHair:hover {color: deepskyblue;}
+header nav .food:hover {color: #81d742;}
+header nav .tech:hover {color: darkorchid;}
+header nav .inspiration:hover {color: crimson;}
+header nav .culture:hover {color: darkgoldenrod;}
+header nav .businessFinance:hover {color: orangered;}
+
 header #socMedLinks a {
     margin: 0 7px;
 }
@@ -143,7 +149,7 @@ hr {
 #recentBlogs .recentBlogCard .post-categories .skinHair, 
 #editorPicks .blogCard .imgWrapper .post-categories .skinHair,
 #popularCategories .categoryCardWrapper .post-categories.skinHair {
-    background-color: deepskyblue
+    background-color: deepskyblue;
 }
 #recentBlogs .recentBlogCard .post-categories .inspiration, 
 #editorPicks .blogCard .imgWrapper .post-categories .inspiration,
